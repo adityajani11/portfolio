@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d portfolio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://adityajani11.github.io/wd-prc/portfolio.git",
+  "homepage": "https://adityajani11.github.io/portfolio.git",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
