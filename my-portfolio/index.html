@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section class="hero text-white text-center d-flex align-items-center" id="hero">
+        <div class="particle-background">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-2">Hello, I'm <span class="highlight">Aditya Jani</span></h1>
+            <p class="lead">Web Developer | MERN Stack Developer | Full Stack Enthusiast</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container" data-aos="fade-right">
+            <h2 class="mb-4">About Me</h2>
+            <p class="lead">I specialize in creating high-quality websites and applications using modern web
+                technologies. My passion lies in clean design and efficient code.</p>
+            <p class="lead">
+                I'm a passionate Web Software Engineer with a strong foundation in front-end and back-end technologies.
+                I specialize in building responsive, user-friendly web applications using modern tools like HTML, CSS,
+                JavaScript, and frameworks such as Bootstrap and React. My focus is on writing clean, efficient code and
+                creating seamless user experiences. I'm always eager to learn new technologies and take on meaningful
+                challenges that make an impact.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">Projects</h2>
+            <div class="row g-4">
+
+                <!-- Project Cards -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="images/kss.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Attandence Management Portal</h5>
+                            <p class="card-text flex-grow-1">A barcode-based attendance management portal that
+                                streamlines tracking using barcode scans and real-time dashboards. Integrated with
+                                WhatsApp API to instantly notify users or guardians of absences.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="images/event-plan.webp" class="card-img-top" alt="Project 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Go-Event</h5>
+                            <p class="card-text flex-grow-1">A digital certificate generation platform designed to
+                                streamline event certification, enabling organizers to create and distribute event
+                                certificates efficiently and in minimal time.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <img src="images/job.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Jobify</h5>
+                            <p class="card-text flex-grow-1">A professional job portal that connects candidates and
+                                employers, allowing candidates to apply for jobs and companies to post openings.
+                                Employers can manage applications by viewing, accepting, or rejecting candidates
+                                directly through the platform.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container" data-aos="fade-left">
+            <h2 class="mb-4">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required />
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address" required />
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy 2025 Aditya Jani. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
