@@ -25,6 +25,24 @@ footer p {
   margin: 0;
 }
 
+.heading {
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+.heading:hover {
+  color: rgba(100, 45, 228, 0.87);
+}
+
+.card {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
 .vertical-divider {
     border-left: 2px solid #ccc;
     height: 100%;
