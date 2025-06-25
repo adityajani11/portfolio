@@ -25,6 +25,34 @@ footer p {
   margin: 0;
 }
 
+.vertical-divider {
+    border-left: 2px solid #ccc;
+    height: 100%;
+    width: 1px;
+    margin: auto;
+  }
+
+/* Gradient text animation */
+.animated-gradient-text {
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 6s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Particle Animation */
 .particle-background {
   position: absolute;
