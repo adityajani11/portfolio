@@ -1,46 +1,98 @@
+/* Global enhancements */
 body {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  background-color: #f8f9fa;
 }
 
+h2, h5, .heading {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(33, 37, 41, 0.63) !important;
+}
+
+/* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('./images/picture.jpg') no-repeat center center/cover;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('./images/picture.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero .container {
+  z-index: 1;
+  position: relative;
 }
 
 .highlight {
-  color: #00bcd4;
+  color: #00d4ff;
 }
 
-h2 {
-  font-weight: 700;
-}
-
-.card-title {
-  font-weight: bold;
-}
-
-footer p {
-  margin: 0;
-}
-
-.heading {
-  color: black;
-  transition: color 0.2s ease-in-out;
-}
-
-.heading:hover {
-  color: rgba(100, 45, 228, 0.87);
-}
-
+/* Card Enhancements */
 .card {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
 }
 
 .card:hover {
-    transform: scale(1.02);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Section Heading */
+.heading {
+  color: #222;
+  font-size: 2.2rem;
+  border-left: 5px solid #6c63ff;
+  padding-left: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* Contact form */
+form .form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  transition: border-color 0.3s;
+}
+form .form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+
+/* Button Animation */
+.btn-dark,
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Particle z-index fix */
+.particle-background {
+  z-index: 0;
 }
 
 .vertical-divider {
@@ -69,6 +121,19 @@ footer p {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.footer-icon {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #00bcd4;
+  transform: translateY(-3px);
 }
 
 /* Particle Animation */
