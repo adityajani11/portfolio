@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- AOS -->
@@ -19,9 +21,10 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -79,13 +82,15 @@
     </section>
 
     <!-- Education -->
-    <section id="education" class="py-5">
+    <section id="education">
         <div class="container" data-aos="fade-left">
             <div class="row">
                 <div class="col-md-5">
                     <h2 class="mb-4 heading">Education</h2>
-                    <h5><strong>B.E. in Computer Engineering </strong>|<em class="font-monospace"> 2023 - Pursuing</em> </h5>
-                    <p class="fs-6"><cite class="badge text-bg-secondary fw-bold">9.17 CGPA</cite> &bull; VVP Engineering College, Rajkot &bull;  <em class="fw-bold">GTU</em> </p>
+                    <h5><strong>B.E. in Computer Engineering </strong>|<em class="font-monospace"> 2023 - Pursuing</em>
+                    </h5>
+                    <p class="fs-6"><cite class="badge text-bg-secondary fw-bold">9.17 CGPA</cite> &bull; VVP
+                        Engineering College, Rajkot &bull; <em class="fw-bold">GTU</em> </p>
                 </div>
 
                 <!-- Center Separator -->
@@ -96,15 +101,18 @@
                 </div>
 
                 <div class="col-md-5 py-3">
-                    <h5><strong>Diploma in Computer Engineering </strong>|<em class="font-monospace"> 2020 - 2023</em> </h5>
-                    <p class="fs-6"><cite class="badge text-bg-secondary fw-bold">9.45 CGPA</cite> &bull; A. V. Parekh Technical Institute, Rajkot &bull; <em class="fw-bold">GTU</em> </p>
+                    <h5><strong>Diploma in Computer Engineering </strong>|<em class="font-monospace"> 2020 - 2023</em>
+                    </h5>
+                    <p class="fs-6"><cite class="badge text-bg-secondary fw-bold">9.45 CGPA</cite> &bull; A. V. Parekh
+                        Technical Institute, Rajkot &bull; <em class="fw-bold">GTU</em> </p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12 py-5">
                     <h5><strong>Class X </strong>|<em class="font-monospace"> 2018</em> </h5>
-                    <p class="fs-6"><cite class="badge text-bg-secondary fw-bold">93.97 PR</cite> &bull; Krishna Secondary School, Keshod &bull; <em class="fw-bold">GSEB Board</em> </p>
+                    <p class="fs-6"><cite class="badge text-bg-secondary fw-bold">93.97 PR</cite> &bull; Krishna
+                        Secondary School, Keshod &bull; <em class="fw-bold">GSEB Board</em> </p>
                 </div>
             </div>
         </div>
@@ -133,7 +141,7 @@
     <!-- Projects -->
     <section id="projects" class="bg-light py-5">
         <div class="container" data-aos="fade-up">
-            <h2 class="mb-4 text-center heading">Projects</h2>
+            <h2 class="mb-4 heading">Projects</h2>
             <div class="row g-4">
 
                 <!-- Project Cards -->
@@ -222,7 +230,14 @@
 
     <!-- Footer -->
     <footer class="text-center py-4 bg-dark text-white">
-        <p>&copy 2025 Aditya Jani. All rights reserved.</p>
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://github.com/" target="_blank" class="footer-icon"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:you@example.com" class="footer-icon"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p>&copy; 2025 Aditya Jani. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Scripts -->
